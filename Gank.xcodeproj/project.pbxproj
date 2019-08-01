@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		840638E222F2CD0C00AF7634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840638E122F2CD0C00AF7634 /* AppDelegate.swift */; };
-		840638E422F2CD0C00AF7634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840638E322F2CD0C00AF7634 /* ViewController.swift */; };
 		840638E922F2CD0D00AF7634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840638E822F2CD0D00AF7634 /* Assets.xcassets */; };
 		840638EC22F2CD0D00AF7634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840638EA22F2CD0D00AF7634 /* LaunchScreen.storyboard */; };
+		840638FB22F3069C00AF7634 /* GKTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840638FA22F3069C00AF7634 /* GKTabbarViewController.swift */; };
+		840638FE22F30BD500AF7634 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840638FD22F30BD500AF7634 /* NewViewController.swift */; };
+		8406390022F30BE200AF7634 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840638FF22F30BE200AF7634 /* CategoryViewController.swift */; };
+		8406390222F30BEC00AF7634 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406390122F30BEC00AF7634 /* MeViewController.swift */; };
+		8406390522F30CFE00AF7634 /* GKNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406390422F30CFE00AF7634 /* GKNavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		840638DE22F2CD0C00AF7634 /* Gank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840638E122F2CD0C00AF7634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840638E322F2CD0C00AF7634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840638E822F2CD0D00AF7634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840638EB22F2CD0D00AF7634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840638ED22F2CD0D00AF7634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840638FA22F3069C00AF7634 /* GKTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKTabbarViewController.swift; sourceTree = "<group>"; };
+		840638FD22F30BD500AF7634 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		840638FF22F30BE200AF7634 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		8406390122F30BEC00AF7634 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		8406390422F30CFE00AF7634 /* GKNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +77,7 @@
 		840638F322F2D01F00AF7634 /* New */ = {
 			isa = PBXGroup;
 			children = (
-				840638E322F2CD0C00AF7634 /* ViewController.swift */,
+				840638FD22F30BD500AF7634 /* NewViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -77,6 +85,7 @@
 		840638F422F2D02B00AF7634 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				840638FF22F30BE200AF7634 /* CategoryViewController.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -84,6 +93,7 @@
 		840638F522F2D03A00AF7634 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				8406390122F30BEC00AF7634 /* MeViewController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -105,8 +115,26 @@
 		840638F822F2D5BB00AF7634 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8406390322F30CE400AF7634 /* Nav */,
+				840638F922F3067F00AF7634 /* Tabbar */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		840638F922F3067F00AF7634 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				840638FA22F3069C00AF7634 /* GKTabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		8406390322F30CE400AF7634 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				8406390422F30CFE00AF7634 /* GKNavViewController.swift */,
+			);
+			path = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840638E422F2CD0C00AF7634 /* ViewController.swift in Sources */,
+				8406390522F30CFE00AF7634 /* GKNavViewController.swift in Sources */,
+				8406390222F30BEC00AF7634 /* MeViewController.swift in Sources */,
+				8406390022F30BE200AF7634 /* CategoryViewController.swift in Sources */,
+				840638FE22F30BD500AF7634 /* NewViewController.swift in Sources */,
+				840638FB22F3069C00AF7634 /* GKTabbarViewController.swift in Sources */,
 				840638E222F2CD0C00AF7634 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
